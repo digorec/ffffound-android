@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_settings" android:title="Reload"
+        android:orderInCategory="100" app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_action_autorenew"/>
+    <item android:id="@+id/action_random" android:title="Random"
+        android:orderInCategory="100" app:showAsAction="ifRoom"
+
+        android:icon="@drawable/ic_action_editor_border_outer"
+
+        />
+
+</menu>

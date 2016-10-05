@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId 'com.digorec.ffffound.reader'
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionName '1.02'
+        versionCode 3
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            minifyEnabled true
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile files('libs/htmlcleaner-2.13.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/glide-3.6.1.jar')
+}
